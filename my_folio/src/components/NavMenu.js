@@ -26,7 +26,7 @@ const NavMenuStyles = styled.div`
     }
     a {
       display: inline-block;
-      font-family: 'Iceland Regular';
+      font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
       color: var(--gray-3);

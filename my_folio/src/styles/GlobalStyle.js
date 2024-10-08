@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
   }
   html{
     font-size: 10px;
-    font-family: 'Roboto Mono';
+    font-family: 'Iceland Regular';
     background-color: var(--dark-bg-2);
   }
   ul,li{
