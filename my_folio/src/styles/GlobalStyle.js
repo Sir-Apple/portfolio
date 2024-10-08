@@ -11,14 +11,17 @@ const GlobalStyles = createGlobalStyle`
     --gray-1: #BCB4B4;
     --deep-dark: #1E1E1E;
     --gray-2: #363636;
+    --gray-3: #6e6e6e;
     --white : white;
     --black: black;
     --green: #30fe6c;
+    --dark-bg-2: #081215;
+    --deep-dark-2: #050d0a;
   }
   html{
     font-size: 10px;
     font-family: 'Roboto Mono';
-    background-color: var(--dark-bg);
+    background-color: var(--dark-bg-2);
   }
   ul,li{
     list-style: none;
