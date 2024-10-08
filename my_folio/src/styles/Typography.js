@@ -3,6 +3,8 @@ import RobotoMonoRegular from '../assets/fonts/RobotoMono-Regular.ttf';
 import MontserratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
 import MontserratBold from '../assets/fonts/Montserrat-Bold.ttf';
 import Iceland from '../assets/fonts/Iceland-Regular.ttf';
+import BigShouldersDisplayMedium from '../assets/fonts/BigShouldersDisplay-Medium.ttf';
+import BigShouldersDisplayRegular from '../assets/fonts/BigShouldersDisplay-Regular.ttf';
 
 const Typography = createGlobalStyle`
   @font-face {
@@ -20,13 +22,23 @@ const Typography = createGlobalStyle`
     src: url(${MontserratBold});
     font-style: normal;
   }
-    @font-face {
+  @font-face {
     font-family: 'Iceland Regular';
     src: url(${Iceland});
     font-style: normal;
   }
+  @font-face {
+    font-family: 'BigShouldersDisplay Regular';
+    src: url(${BigShouldersDisplayRegular});
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'BigShouldersDisplay Medium';
+    src: url(${BigShouldersDisplayMedium});
+    font-style: normal;
+  }
   html{
-    font-family: 'Iceland Regular';
+    font-family: 'BigShouldersDisplay Medium';
     color: var(--gray-1);
   }
   *{
