@@ -10,7 +10,7 @@ const NavMenuStyles = styled.div`
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  background: var(--dark-bg-2);
+  background: var(--gray-deep-dark);
   ul {
     max-width: 1200px;
     margin: 0 auto;
@@ -59,7 +59,7 @@ const NavMenuStyles = styled.div`
     .navItems {
       --top: 1rem;
       transition: 0.3s ease transform;
-      background-color: var(--deep-dark-2);
+      background-color: var(--gray-deep-dark);
       padding: 2rem;
       width: 90%;
       max-width: 250px;

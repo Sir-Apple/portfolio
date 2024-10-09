@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div className="hero__info">
         <PText />
-        <Button btnLink="/projects" btnText="see my works" />
+        <Button btnLink="/projects" btnText="See my works" />
       </div>
       <h1>Home</h1>
     </div>

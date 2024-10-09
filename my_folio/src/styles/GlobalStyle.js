@@ -17,11 +17,12 @@ const GlobalStyles = createGlobalStyle`
     --green: #30fe6c;
     --dark-bg-2: #081215;
     --deep-dark-2: #050d0a;
+    --gray-deep-dark: #111111;
   }
   html{
     font-size: 10px;
     font-family: 'Iceland Regular';
-    background-color: var(--dark-bg-2);
+    background-color: var(--gray-deep-dark);
   }
   ul,li{
     list-style: none;

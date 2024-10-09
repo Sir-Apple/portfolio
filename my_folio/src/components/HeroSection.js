@@ -7,6 +7,14 @@ export default function HeroSection() {
       <div className="hero__img">
         <img src={HeroImg} alt="hero" />
       </div>
+      <div className="hero__social">
+        <div className="hero__social__indicator">
+          <p>Socials</p>
+        </div>
+        <div className="hero__social__links">
+          <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+        </div>
+      </div>
     </div>
   );
 }
