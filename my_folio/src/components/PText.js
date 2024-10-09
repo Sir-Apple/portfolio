@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const PStyle = styled.div`
   max-with: 500px;
-  margin: 0 auto;
+  margin: 0 10rem 0;
   justify-content: center;
   align-items: center;
   font-size: 2.2rem;
