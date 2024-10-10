@@ -14,10 +14,10 @@ const NavMenuStyles = styled.div`
   ul {
     max-width: 1200px;
     margin: 0 auto;
-    width: 90%;
+    width: 50%;
     text-align: center;
     li {
-      display: inline-block;
+      display: block;
       border-radius: 8px;
       transition: 0.3s ease background-color;
       &:hover {
@@ -25,7 +25,7 @@ const NavMenuStyles = styled.div`
       }
     }
     a {
-      display: inline-block;
+      display: block;
       font-family: 'RobotoMono Regular';
       padding: 1rem 2rem;
       font-size: 2rem;
