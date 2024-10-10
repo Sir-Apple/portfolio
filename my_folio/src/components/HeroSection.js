@@ -22,6 +22,7 @@ const HeroImgStyles = styled.div`
   align-items: left;
   width: 15rem;
   border: 1px solid white;
+  border-radius: 5px;
 `;
 
 const HeroSocialIndicatorStyles = styled.div`
