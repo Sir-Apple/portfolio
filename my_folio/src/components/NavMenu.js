@@ -6,15 +6,12 @@ import { MdClose, MdMenu } from 'react-icons/md';
 const NavMenuStyles = styled.div`
   position: fixed;
   z-index: 100;
-  top: 0;
-  left: 0;
-  width: 100%;
   padding: 1rem 0;
+  right: 5rem;
   background: var(--gray-deep-dark);
   ul {
     max-width: 1200px;
     margin: 0 auto;
-    width: 50%;
     text-align: center;
     li {
       display: block;
@@ -48,10 +45,15 @@ const NavMenuStyles = styled.div`
   .closeNavIcon {
     display: none;
   }
-  @media only screen and (max-width: 768px) {
+
+  @media only screen and (max-width: 1080px) {
     padding: 0;
+    left: 0;
+    right: 0;
+    position: fixed; /* Ensure the navbar stays fixed when scrolling */
+    top: 0; /* Position at the top of the screen */
     .hide-item {
-      transform: translateY(calc(-100% - var(--top)));
+      transform: translateY(calc(-150% - var(--top)));
     }
     .mobile-menu-icon {
       display: block;
@@ -61,12 +63,12 @@ const NavMenuStyles = styled.div`
       transition: 0.3s ease transform;
       background-color: var(--gray-deep-dark);
       padding: 2rem;
-      width: 90%;
-      max-width: 250px;
-      border-radius: 10px;
-      position: absolute;
-      right: 1rem;
-      top: var(--top);
+      width: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      border-radius: 0;
+      position: fixed; /* Keep the navItems fixed when open */
       .closeNavIcon {
         display: block;
         width: 3rem;
@@ -90,17 +92,21 @@ const NavMenuStyles = styled.div`
 
 export default function NavMenu() {
   const [showNav, SetShowNav] = useState(false);
+
   return (
     <NavMenuStyles>
-      <div
-        className="mobile-menu-icon"
-        onClick={() => SetShowNav(!showNav)}
-        role="button"
-        onKeyDown={() => SetShowNav(!showNav)}
-        tabIndex={0}
-      >
-        <MdMenu />
-      </div>
+      {/* Conditionally render the mobile menu icon only when navItems are hidden */}
+      {!showNav && (
+        <div
+          className="mobile-menu-icon"
+          onClick={() => SetShowNav(!showNav)}
+          role="button"
+          onKeyDown={() => SetShowNav(!showNav)}
+          tabIndex={0}
+        >
+          <MdMenu />
+        </div>
+      )}
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
           className="closeNavIcon"

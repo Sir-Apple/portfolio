@@ -4,22 +4,31 @@ import styled from 'styled-components';
 import HeroImg from '../assets/my_images/hero-2.png';
 
 const HeroSectionStyles = styled.div`
-  display: block;
-  width: 100%;
-  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 5rem;
+  position: fixed;
+  background: var(--gray-deep-dark);
+
   .hero__info {
-    display: block;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 2rem;
     margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 1080px) {
+    position: relative;
+    left: 25%;
+    width: 50%;
   }
 `;
 
 const HeroImgStyles = styled.div`
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   width: 15rem;
   border: 1px solid white;
   border-radius: 5px;
@@ -32,7 +41,9 @@ const HeroSocialIndicatorStyles = styled.div`
 
 const HeroSocialStyles = styled.div`
   display: flex;
+  justify-content: center;
   width: 10rem;
+  margin: 0 auto;
 `;
 
 export default function HeroSection() {
