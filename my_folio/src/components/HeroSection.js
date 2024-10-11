@@ -52,7 +52,7 @@ const HeroDetailsStyles = styled.div`
 const HeroSocialStyles = styled.div`
   display: flex;
   justify-content: center;
-  width: 12rem;
+  width: 12.5rem;
   margin: 0 auto;
   a {
     color: white;
@@ -81,7 +81,7 @@ export default function HeroSection() {
       setTimeout(() => {
         clearInterval(scrambleInterval);
         setDisplayWord(words[nextIndex]);
-      }, 1000);
+      }, 1500);
     }, 2500);
 
     return () => clearInterval(interval);

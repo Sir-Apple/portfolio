@@ -9,9 +9,20 @@ const InfoStyle = styled.div`
   align-items: center;
   font-size: 2.2rem;
   line-height: 2.1rem;
-  margin: 25rem 40rem 0;
+  margin: 20rem 40rem 0;
+  h1 {
+    margin-bottom 6rem;
+    justify-content: center;
+    align-items: center;
+    line-height: 4rem;
+  }
   @media only screen and (max-width: 1080px) {
     margin: 8rem 5rem 0;
+  }
+  @media only screen and (max-width: 768px){
+   h1 {
+    font-size: 2.8rem;
+    }
   }
 `;
 
@@ -22,6 +33,13 @@ const HeroImgStyles = styled.div`
   margin: 0 auto;
   img {
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 32rem;
+    }
   }
 `;
 
@@ -29,6 +47,7 @@ export default function Home() {
   return (
     <div>
       <InfoStyle>
+        <h1>TuanAnh Tran Portfolio</h1>
         <HeroImgStyles>
           <img src={HeroImg2} alt="hero" />
         </HeroImgStyles>
