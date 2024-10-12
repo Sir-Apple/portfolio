@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import projects from '../assets/data/commercial-projects';
-import ProjectItem from '../components/ProjectItem';
+import ProjectItem from './ProjectItem';
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation]);
@@ -74,7 +74,7 @@ const InfoStyle = styled.div`
   }
 `;
 
-export default function Projects() {
+export default function ProjectsSection() {
   return (
     <ProjectsSectionStyle>
       <InfoStyle>
@@ -105,8 +105,6 @@ export default function Projects() {
                   <ProjectItem
                     title={project.name}
                     img={project.img}
-                    company={project.company}
-                    skills={project.skills}
                     desc={project.desc}
                   />
                 </SwiperSlide>

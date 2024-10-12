@@ -9,7 +9,7 @@ const InfoStyle = styled.div`
   align-items: center;
   font-size: 2.2rem;
   line-height: 2.1rem;
-  margin: 20rem 40rem 0;
+  margin: 15rem 40rem 0;
   h1 {
     margin-bottom 6rem;
     justify-content: center;
@@ -45,15 +45,13 @@ const HeroImgStyles = styled.div`
 
 export default function Home() {
   return (
-    <div>
-      <InfoStyle>
-        <h1>TuanAnh Tran Portfolio</h1>
-        <HeroImgStyles>
-          <img src={HeroImg2} alt="hero" />
-        </HeroImgStyles>
-        <PText />
-        <Button btnLink="/projects" btnText="See my works" />
-      </InfoStyle>
-    </div>
+    <InfoStyle>
+      <h1>TuanAnh Tran Portfolio</h1>
+      <HeroImgStyles>
+        <img src={HeroImg2} alt="hero" />
+      </HeroImgStyles>
+      <PText />
+      <Button btnLink="/projects" btnText="See my works" />
+    </InfoStyle>
   );
 }
