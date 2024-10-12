@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../components/Button';
 import PText from '../components/PText';
+import ExperiencesItem from '../components/ExperiencesItem';
 
 const InfoStyle = styled.div`
   justify-content: center;
@@ -29,7 +30,8 @@ export default function About() {
   return (
     <InfoStyle>
       <h1>Experiences</h1>
-      <PText />
+      <ExperiencesItem />
+      <PText>Text</PText>
       <Button btnLink="/projects" btnText="See my works" />
     </InfoStyle>
   );

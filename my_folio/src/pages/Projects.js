@@ -25,7 +25,7 @@ const ProjectsSectionStyle = styled.div`
     width: 50px;
     background-color: black;
     z-index: 10;
-    margin-right: 6rem;
+    margin-right: 6.5rem;
     top: 2rem;
     transform: translate(50%);
     color: white;
@@ -78,9 +78,7 @@ export default function Projects() {
   return (
     <ProjectsSectionStyle>
       <InfoStyle>
-        <div className="container">
-          <h1>My Projects</h1>
-        </div>
+        <h1>Commercial Projects</h1>
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}

@@ -10,7 +10,7 @@ const projects = [
     id: uuidv4(),
     name: 'Coding in the Park',
     company: 'Queensland University of Technology',
-    skills: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySQL'],
     desc:
       'An application to track your all data from one place. I developed the website and the mobile app',
     img: UTrackerImg,
@@ -19,7 +19,7 @@ const projects = [
     id: uuidv4(),
     name: 'Epoch 2140',
     company: 'Epoch',
-    skills: ['HTML', 'CSS', 'JS', 'Unity', 'C#'],
+    skills: ['HTML', 'CSS', 'JavaScript', 'Unity', 'C#'],
     desc:
       'An app to help people to get an overview of how they can make the city beautiful.',
     img: GreenCtgImg,

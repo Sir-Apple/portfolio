@@ -38,7 +38,7 @@ const ProjectItemStyles = styled.div`
     margin-top: 1.5rem;
   }
   .projectItem__company {
-    font-size: 1.8rem;
+    font-size: 1.85rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
   }
@@ -47,7 +47,7 @@ const ProjectItemStyles = styled.div`
     color: white;
     padding: 0.5rem 1rem;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 12px;
     display: inline-block;
     white-space: nowrap;
   }

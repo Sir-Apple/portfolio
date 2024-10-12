@@ -50,7 +50,15 @@ export default function Home() {
       <HeroImgStyles>
         <img src={HeroImg2} alt="hero" />
       </HeroImgStyles>
-      <PText />
+      <PText>
+        Welcome to my portfolio! <br /> My name is TuanAnh (or can just call me
+        Andrew). I am a passionate software developer with hands-on experience
+        and deep expertise in software, website and game development, driven by
+        a love for building and creating innovative solutions. I am committed to
+        leveraging my skills in application development while continually
+        refining my craft to deliver efficient, reliable, and secure software
+        solutions.
+      </PText>
       <Button btnLink="/projects" btnText="See my works" />
     </InfoStyle>
   );

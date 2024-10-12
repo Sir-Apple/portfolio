@@ -13,18 +13,10 @@ const PStyle = styled.div`
   }
 `;
 
-export default function PText() {
+export default function PText({ children }) {
   return (
     <PStyle>
-      <p>
-        Welcome to my portfolio! <br /> My name is TuanAnh (or can just call me
-        Andrew). I am a passionate software developer with hands-on experience
-        and deep expertise in software, website and game development, driven by
-        a love for building and creating innovative solutions. I am committed to
-        leveraging my skills in application development while continually
-        refining my craft to deliver efficient, reliable, and secure software
-        solutions.
-      </p>
+      <p>{children}</p>
     </PStyle>
   );
 }
