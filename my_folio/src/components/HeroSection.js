@@ -22,7 +22,7 @@ const HeroSectionStyles = styled.div`
   position: fixed;
   background: var(--gray-deep-dark);
   width: 30rem;
-  z-index: 100;
+  z-index: 99;
   .hero__info {
     text-align: center;
     font-size: 2rem;
