@@ -38,7 +38,7 @@ const HeroImgStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     img {
-      width: 30rem;
+      width: 28rem;
     }
   }
 `;
