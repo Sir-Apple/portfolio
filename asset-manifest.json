@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.js": "/portfolio/static/js/main.03f2ecf8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.03f2ecf8.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.59c330ae.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.59c330ae.js.map",
+    "static/css/2.41ebb63b.chunk.css": "/portfolio/static/css/2.41ebb63b.chunk.css",
+    "static/js/2.5fd09346.chunk.js": "/portfolio/static/js/2.5fd09346.chunk.js",
+    "static/js/2.5fd09346.chunk.js.map": "/portfolio/static/js/2.5fd09346.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.41ebb63b.chunk.css.map": "/portfolio/static/css/2.41ebb63b.chunk.css.map",
+    "static/js/2.5fd09346.chunk.js.LICENSE.txt": "/portfolio/static/js/2.5fd09346.chunk.js.LICENSE.txt",
+    "static/media/BigShouldersDisplay-Medium.faa156d4.ttf": "/portfolio/static/media/BigShouldersDisplay-Medium.faa156d4.ttf",
+    "static/media/BigShouldersDisplay-Regular.bb81c7d9.ttf": "/portfolio/static/media/BigShouldersDisplay-Regular.bb81c7d9.ttf",
+    "static/media/Iceland-Regular.7e45c1c0.ttf": "/portfolio/static/media/Iceland-Regular.7e45c1c0.ttf",
+    "static/media/Montserrat-Bold.079ca05d.ttf": "/portfolio/static/media/Montserrat-Bold.079ca05d.ttf",
+    "static/media/Montserrat-SemiBold.fa8441f3.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f3.ttf",
+    "static/media/RobotoMono-Regular.418a8f9f.ttf": "/portfolio/static/media/RobotoMono-Regular.418a8f9f.ttf",
+    "static/media/advancechess.09efb779.PNG": "/portfolio/static/media/advancechess.09efb779.PNG",
+    "static/media/codinginthepark.f57fcc19.png": "/portfolio/static/media/codinginthepark.f57fcc19.png",
+    "static/media/epoch.e00695ea.png": "/portfolio/static/media/epoch.e00695ea.png",
+    "static/media/gogah.420d33be.jpg": "/portfolio/static/media/gogah.420d33be.jpg",
+    "static/media/hero-2.a49c0cf9.png": "/portfolio/static/media/hero-2.a49c0cf9.png",
+    "static/media/hero-home.369e8d56.png": "/portfolio/static/media/hero-home.369e8d56.png",
+    "static/media/movieapp.5edc69f1.PNG": "/portfolio/static/media/movieapp.5edc69f1.PNG",
+    "static/media/oldgovarsim.90421ed1.png": "/portfolio/static/media/oldgovarsim.90421ed1.png",
+    "static/media/oldportfolio.fda3e371.PNG": "/portfolio/static/media/oldportfolio.fda3e371.PNG",
+    "static/media/projectImg.771236e1.png": "/portfolio/static/media/projectImg.771236e1.png",
+    "static/media/thehauntedbg.1766a5ed.jpg": "/portfolio/static/media/thehauntedbg.1766a5ed.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59c330ae.js",
+    "static/css/2.41ebb63b.chunk.css",
+    "static/js/2.5fd09346.chunk.js",
+    "static/js/main.03f2ecf8.chunk.js"
+  ]
+}
