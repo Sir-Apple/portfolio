@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import projects from '../assets/data/commercial-projects';
+import projects from '../assets/data/my_projects';
 import ProjectItem from './ProjectItem';
 import 'swiper/swiper-bundle.min.css';
 

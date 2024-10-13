@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+// import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import projectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
@@ -11,6 +11,7 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
     display: inline-block;
     border: 3px solid var(--gray-2);
+    cursor: pointer;
     img {
       height: 100%;
     }
@@ -22,7 +23,7 @@ const ProjectItemStyles = styled.div`
     border-radius: 12px;
   }
   .projectItem__title {
-    font-size: 2.35rem;
+    font-size: 2.1rem;
     color: white;
   }
   .projectItem__description {
@@ -31,30 +32,38 @@ const ProjectItemStyles = styled.div`
     color: var(--gray-1);
     margin-top: 1rem;
   }
-  .projectItem__skills {
+  .projectItem__skills,
+  .projectItem__type {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     margin-top: 1.5rem;
   }
   .projectItem__company {
-    font-size: 1.85rem;
+    font-size: 1.75rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
   }
+
+  .type__item {
+    font-size: 1.6rem;
+    color: var(--gray-1);
+    display: inline-block;
+    white-space: nowrap;
+  }
   .skill__item {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     color: white;
     padding: 0.5rem 1rem;
     border: 2px solid white;
-    border-radius: 12px;
+    border-radius: 15px;
     display: inline-block;
     white-space: nowrap;
   }
 
   @media only screen and (max-width: 1080px) {
     .projectItem__img {
-      height: 35px;
+      height: 290px;
     }
   }
 `;
@@ -63,20 +72,35 @@ export default function ProjectItem({
   img = projectImg,
   title = 'Project Name',
   company = 'Company Name',
+  types = ['Project Type'],
   skills = ['Skills'],
-  desc = 'Lorem Ipsum dolor is simply dummy text of the printing and typesetting industry.',
+  onClick,
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="/projects" className="projectItem__img">
+      <div
+        className="projectItem__img"
+        role="button"
+        tabIndex={0}
+        onClick={onClick}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            onClick();
+          }
+        }}
+      >
         <img src={img} alt="project img" />
-      </Link>
+      </div>
       <div className="projectItem__info">
         <p className="projectItem__company">{company}</p>
-        <Link to="">
-          <h3 className="projectItem__title">{title}</h3>
-        </Link>
-        <p className="projectItem__description">{desc}</p>
+        <h3 className="projectItem__title">{title}</h3>
+        <div className="projectItem__type">
+          {types.map((type, index) => (
+            <span className="type__item" key={index}>
+              {type}
+            </span>
+          ))}
+        </div>
         <div className="projectItem__skills">
           {skills.map((skill, index) => (
             <span className="skill__item" key={index}>
