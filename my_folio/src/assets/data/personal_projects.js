@@ -23,7 +23,7 @@ const projects = [
     desc:
       'My previous version of my portfolio, made with HTML, CSS, and JavaScript',
     img: OldPortfolioImg,
-    webLink: 'https://sir-apple.github.io/',
+    webLink: 'sir-apple-github-io.vercel.app/',
     githubLink: 'https://github.com/Sir-Apple/Sir-Apple.github.io',
   },
   {
