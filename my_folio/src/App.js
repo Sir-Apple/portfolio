@@ -10,7 +10,7 @@ import HeroSection from './components/HeroSection';
 export default function App() {
   return (
     <>
-      <Router>
+      <Router basename="/portfolio">
         <NavMenu />
         <HeroSection />
         <Switch>
