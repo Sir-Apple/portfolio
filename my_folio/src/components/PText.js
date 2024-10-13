@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const PStyle = styled.div`
-  max-with: 500px;
+  max-width: 500px;
   justify-content: center;
   align-items: center;
   font-size: 2.3rem;
