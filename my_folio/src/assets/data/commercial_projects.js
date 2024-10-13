@@ -6,7 +6,6 @@ import GPGHImg from '../my_images/gogah.jpg';
 import AdvanceChessImg from '../my_images/advancechess.PNG';
 
 const projects = [
-  // Commercial Projects
   {
     id: uuidv4(),
     name: 'Coding in the Park',
@@ -64,7 +63,6 @@ const projects = [
       'This is a multi-player board game where each chess piece has its own special moves and abilities which is different from the traditional chess game. This game is made with Unity and C#. (Currently in development) ',
     img: AdvanceChessImg,
   },
-  // Personal Projects
 ];
 
 export default projects;

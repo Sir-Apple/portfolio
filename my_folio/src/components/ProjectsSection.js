@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import projects from '../assets/data/my_projects';
-import ProjectItem from './ProjectItem';
+import projects from '../assets/data/commercial_projects';
+import ProjectItem from './CommercialProjectItem';
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation]);

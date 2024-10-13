@@ -3,8 +3,10 @@ import styled from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import projects from '../assets/data/my_projects';
-import ProjectItem from '../components/ProjectItem';
+import commercialProjects from '../assets/data/commercial_projects';
+import personalProjects from '../assets/data/personal_projects';
+import CommercialProjectItem from '../components/CommercialProjectItem';
+import PersonalProjectItem from '../components/PersonalProjectItem';
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation]);
@@ -202,14 +204,45 @@ export default function Projects() {
               1920: { slidesPerView: 3 },
             }}
           >
-            {projects.map((project, index) => {
+            {commercialProjects.map((project, index) => {
               if (index >= 5) return null;
               return (
                 <SwiperSlide key={project.id}>
-                  <ProjectItem
+                  <CommercialProjectItem
                     title={project.name}
                     img={project.img}
                     company={project.company}
+                    types={project.type}
+                    skills={project.skills}
+                    desc={project.desc}
+                    onClick={() => openModal(project)}
+                  />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        </div>
+      </InfoStyle>
+      <InfoStyle>
+        <h1>Personal Projects</h1>
+        <div className="projects__allItems">
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1}
+            navigation
+            breakpoints={{
+              640: { slidesPerView: 1 },
+              1490: { slidesPerView: 2 },
+              1920: { slidesPerView: 3 },
+            }}
+          >
+            {personalProjects.map((project, index) => {
+              if (index >= 3) return null;
+              return (
+                <SwiperSlide key={project.id}>
+                  <PersonalProjectItem
+                    title={project.name}
+                    img={project.img}
                     types={project.type}
                     skills={project.skills}
                     desc={project.desc}
@@ -253,7 +286,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   className="button"
                 >
-                  View GitHub
+                  GitHub
                 </ModalButton>
               )}
               {currentProject.gameyoutubeLink && (

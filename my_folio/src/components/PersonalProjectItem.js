@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import projectImg from '../assets/images/projectImg.png';
 
 const ProjectItemStyles = styled.div`
@@ -68,10 +67,9 @@ const ProjectItemStyles = styled.div`
   }
 `;
 
-export default function ProjectItem({
+export default function PersonalProjectItem({
   img = projectImg,
   title = 'Project Name',
-  company = 'Company Name',
   types = ['Project Type'],
   skills = ['Skills'],
   onClick,
@@ -92,7 +90,6 @@ export default function ProjectItem({
         <img src={img} alt="project img" />
       </div>
       <div className="projectItem__info">
-        <p className="projectItem__company">{company}</p>
         <h3 className="projectItem__title">{title}</h3>
         <div className="projectItem__type">
           {types.map((type, index) => (
