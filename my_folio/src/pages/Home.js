@@ -59,7 +59,6 @@ export default function Home() {
         refining my craft to deliver efficient, reliable, and secure software
         solutions.
       </PText>
-      <Button btnLink="/projects" btnText="See my works" />
     </InfoStyle>
   );
 }
