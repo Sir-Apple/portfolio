@@ -37,6 +37,9 @@ const HeroImgStyles = styled.div`
     align-items: center;
   }
   @media only screen and (max-width: 768px) {
+    width: 28rem;
+  }
+  @media only screen and (max-width: 768px) {
     img {
       width: 28rem;
     }
@@ -59,6 +62,7 @@ export default function Home() {
         refining my craft to deliver efficient, reliable, and secure software
         solutions.
       </PText>
+      <Button btnLink="/projects" btnText="See my works" />
     </InfoStyle>
   );
 }
