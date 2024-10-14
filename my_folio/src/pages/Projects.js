@@ -196,7 +196,7 @@ export default function Projects() {
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
-            slidesPerView={1}
+            slidesPerView={3}
             navigation
             breakpoints={{
               640: { slidesPerView: 1 },
@@ -228,7 +228,7 @@ export default function Projects() {
         <div className="projects__allItems">
           <Swiper
             spaceBetween={30}
-            slidesPerView={1}
+            slidesPerView={3}
             navigation
             breakpoints={{
               640: { slidesPerView: 1 },
@@ -237,7 +237,7 @@ export default function Projects() {
             }}
           >
             {personalProjects.map((project, index) => {
-              if (index >= 3) return null;
+              if (index >= 5) return null;
               return (
                 <SwiperSlide key={project.id}>
                   <PersonalProjectItem

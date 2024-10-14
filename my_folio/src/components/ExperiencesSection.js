@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import experiences from '../assets/data/experiences';
+import ExperiencesItem from './ExperiencesItem';
+// import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import 'swiper/swiper-bundle.min.css';
 
 SwiperCore.use([Navigation]);
@@ -51,19 +53,25 @@ const ExperiencesSectionStyle = styled.div`
   }
 `;
 
-export default function ExperiencesSection({
-  company = 'Company Name',
-  position = 'Position Title',
-  timestamp = 'Timestamp',
-  desc = 'Description',
-}) {
+export default function ExperiencesSection() {
   return (
     <ExperiencesSectionStyle>
       <div className="projects__allItems">
-        <p className="experienceItem__timestamp">{timestamp}</p>
-        <p className="experienceItem__company">{company}</p>
-        <h3 className="experienceItem__title">{position}</h3>
-        <p className="experienceItem__description">{desc}</p>
+        <Swiper spaceBetween={30} slidesPerView={1} navigation>
+          {experiences.map((experience, index) => {
+            if (index >= 5) return;
+            return (
+              <SwiperSlide key={experience.id}>
+                <ExperiencesItem
+                  position={experience.position}
+                  timestamp={experience.timestamp}
+                  company={experience.org}
+                  descr={experience.desc}
+                />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </ExperiencesSectionStyle>
   );

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Button from '../components/Button';
-import PText from '../components/PText';
-import ExperiencesItem from '../components/ExperiencesItem';
+import ExperiencesSection from '../components/ExperiencesSection';
 
 const InfoStyle = styled.div`
   justify-content: center;
@@ -10,6 +8,7 @@ const InfoStyle = styled.div`
   font-size: 2.2rem;
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
+  padding-bottom: 1rem;
   h1 {
     margin-bottom 6rem;
     justify-content: center;
@@ -28,11 +27,11 @@ const InfoStyle = styled.div`
 
 export default function About() {
   return (
-    <InfoStyle>
-      <h1>Experiences</h1>
-      <ExperiencesItem />
-      <PText>Text</PText>
-      <Button btnLink="/projects" btnText="See my works" />
-    </InfoStyle>
+    <>
+      <InfoStyle>
+        <h1>Experiences</h1>
+        <ExperiencesSection />
+      </InfoStyle>
+    </>
   );
 }

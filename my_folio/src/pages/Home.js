@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import HeroImg2 from '../assets/my_images/hero-home.png';
+import Footer from '../components/Footer';
 
 const InfoStyle = styled.div`
   justify-content: center;
@@ -10,6 +11,7 @@ const InfoStyle = styled.div`
   font-size: 2.2rem;
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
+  padding-bottom: 1rem;
   h1 {
     margin-bottom 6rem;
     justify-content: center;
@@ -48,21 +50,24 @@ const HeroImgStyles = styled.div`
 
 export default function Home() {
   return (
-    <InfoStyle>
-      <h1>TuanAnh Tran Portfolio</h1>
-      <HeroImgStyles>
-        <img src={HeroImg2} alt="hero" />
-      </HeroImgStyles>
-      <PText>
-        Welcome to my portfolio! <br /> My name is TuanAnh (or can just call me
-        Andrew). I am a passionate software developer with hands-on experience
-        and deep expertise in software, website and game development, driven by
-        a love for building and creating innovative solutions. I am committed to
-        leveraging my skills in application development while continually
-        refining my craft to deliver efficient, reliable, and secure software
-        solutions.
-      </PText>
-      <Button btnLink="/projects" btnText="See my works" />
-    </InfoStyle>
+    <>
+      <InfoStyle>
+        <h1>TuanAnh Tran Portfolio</h1>
+        <HeroImgStyles>
+          <img src={HeroImg2} alt="hero" />
+        </HeroImgStyles>
+        <PText>
+          Welcome to my portfolio! <br /> My name is TuanAnh (or can just call
+          me Andrew). I am a passionate software developer with hands-on
+          experience and deep expertise in software, website and game
+          development, driven by a love for building and creating innovative
+          solutions. I am committed to leveraging my skills in application
+          development while continually refining my craft to deliver efficient,
+          reliable, and secure software solutions.
+        </PText>
+        <Button btnLink="/projects" btnText="See my works" />
+      </InfoStyle>
+      <Footer />
+    </>
   );
 }
