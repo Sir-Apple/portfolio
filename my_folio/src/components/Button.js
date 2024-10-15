@@ -23,10 +23,10 @@ const ButtonStyles = styled.div`
   }
 `;
 
-export default function Button({ btnLink, btnText, outline = false }) {
+export default function Button({ btnText, outline = false, onClick = null }) {
   return (
     <ButtonStyles outline={outline}>
-      <Link className="button" to={btnLink}>
+      <Link className="button" onClick={onClick}>
         {btnText}
       </Link>
     </ButtonStyles>

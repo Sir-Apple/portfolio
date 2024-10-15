@@ -86,7 +86,7 @@ export default function About() {
             'ReactJS',
             'TailwindCSS',
             'NodeJS',
-            'ASP.NET',
+            'ASP.NET Core',
             'Xamarin',
             'NextJS',
             'Unity',

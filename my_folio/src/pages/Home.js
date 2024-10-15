@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import resumeFile from '../assets/docs/-Resume-.pdf';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import HeroImg2 from '../assets/my_images/hero-home.png';
@@ -50,6 +51,10 @@ const HeroImgStyles = styled.div`
 `;
 
 export default function Home() {
+  const handleDownloadCV = () => {
+    window.open(resumeFile, '_blank');
+  };
+
   return (
     <>
       <InfoStyle>
@@ -66,7 +71,7 @@ export default function Home() {
           development while continually refining my craft to deliver efficient,
           reliable, and secure software solutions.
         </PText>
-        <Button btnLink="/projects" btnText="Download CV" />
+        <Button btnText="My Resume" onClick={handleDownloadCV} />
       </InfoStyle>
       <Footer />
     </>
