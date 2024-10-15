@@ -4,7 +4,7 @@ import NavMenu from './components/NavMenu';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+// import Contact from './pages/Contact';
 import HeroSection from './components/HeroSection';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -22,9 +22,9 @@ export default function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-          <Route path="/contact">
+          {/* <Route path="/contact">
             <Contact />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Home />
           </Route>

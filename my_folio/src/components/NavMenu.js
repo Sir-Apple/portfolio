@@ -95,7 +95,6 @@ export default function NavMenu() {
 
   return (
     <NavMenuStyles>
-      {/* Conditionally render the mobile menu icon only when navItems are hidden */}
       {!showNav && (
         <div
           className="mobile-menu-icon"
@@ -151,7 +150,7 @@ export default function NavMenu() {
             Projects
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink
             to="/contact"
             onClick={() => SetShowNav(!showNav)}
@@ -161,7 +160,7 @@ export default function NavMenu() {
           >
             Contact
           </NavLink>
-        </li>
+        </li> */}
       </ul>
     </NavMenuStyles>
   );

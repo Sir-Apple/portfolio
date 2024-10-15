@@ -45,7 +45,7 @@ export default function ContactForm() {
   const [message, setMessage] = useState('');
   return (
     <div>
-      <FormStyle>
+      <FormStyle action="https://formspree.io/f/mqkoryyn" method="POST">
         <div className="form-group">
           <label htmlFor="name">
             Name
@@ -53,6 +53,7 @@ export default function ContactForm() {
               type="text"
               id="name"
               name="name"
+              required
               placeholder="Enter your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -66,6 +67,7 @@ export default function ContactForm() {
               type="text"
               id="email"
               email="email"
+              required
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -85,7 +87,9 @@ export default function ContactForm() {
             />
           </label>
         </div>
-        <button type="submit">Send</button>
+        <button id="button" type="submit">
+          Send
+        </button>
       </FormStyle>
     </div>
   );
