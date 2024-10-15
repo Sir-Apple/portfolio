@@ -56,7 +56,7 @@ export default function About() {
         </h2>
         <h1>Skills</h1>
         <AboutInfoItem
-          title="Languages"
+          title="Languages and Programming Languages"
           items={[
             'C#',
             'JavaScript',
@@ -70,8 +70,15 @@ export default function About() {
           ]}
         />
         <AboutInfoItem
-          title="Databases"
-          items={['MySQL', 'MongoDB', 'Microsoft SQL Server']}
+          title="Database Management Systems / Document"
+          items={[
+            'MySQL',
+            'MongoDB',
+            'Microsoft SQL Server',
+            'PostgreSQL',
+            'NoSQL',
+            'SQLite',
+          ]}
         />
         <AboutInfoItem
           title="Libraries and Tools"
