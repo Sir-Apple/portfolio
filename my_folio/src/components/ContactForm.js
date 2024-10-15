@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import styled from 'styled-components';
 
 const FormStyle = styled.form`
@@ -43,14 +44,19 @@ export default function ContactForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+  const [state, handleSubmit] = useForm('myyqgbvo');
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
   return (
     <div>
-      <FormStyle action="https://formspree.io/f/mqkoryyn" method="POST">
+      <FormStyle onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="name">
             Name
             <input
-              type="text"
+              type="name"
               id="name"
               name="name"
               required
@@ -58,19 +64,25 @@ export default function ContactForm() {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
+            <ValidationError prefix="Name" field="name" errors={state.errors} />
           </label>
         </div>
         <div className="form-group">
           <label htmlFor="email">
             Email
             <input
-              type="text"
+              type="email"
               id="email"
               email="email"
               required
               placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </label>
         </div>
@@ -81,13 +93,18 @@ export default function ContactForm() {
               type="text"
               id="message"
               message="message"
-              placeholder="Enter your email"
+              placeholder="Enter your message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </label>
         </div>
-        <button id="button" type="submit">
+        <button type="submit" disabled={state.submitting}>
           Send
         </button>
       </FormStyle>

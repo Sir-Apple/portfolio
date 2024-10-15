@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import PText from '../components/PText';
-import Button from '../components/Button';
+// import PText from '../components/PText';
+// import Button from '../components/Button';
 import Footer from '../components/Footer';
 import ContactSection from '../components/ContactSection';
 
