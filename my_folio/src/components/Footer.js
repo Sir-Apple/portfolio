@@ -4,7 +4,7 @@ import FooterCol from './FooterCol';
 import PText from './PText';
 
 const FooterStyles = styled.div`
-  padding-top: 10rem;
+  padding-top: 5rem;
   background-color: var(--deep-dark);
   .container {
     display: flex;
@@ -13,8 +13,7 @@ const FooterStyles = styled.div`
   .footer__col1 {
     flex: 2;
   }
-  .footer__col2,
-  .footer__col3 {
+  .footer__col2 {
     flex: 1;
   }
   .footer__col1__title {
@@ -31,6 +30,25 @@ const FooterStyles = styled.div`
       margin-left: 0;
     }
   }
+  @media only screen and (max-width: 1080px) {
+    .container {
+      flex-direction: column;
+      gap: 0rem;
+      & > div {
+        margin-top: 5rem;
+      }
+    }
+    .footer__col1 .para {
+      max-width: 100%;
+    }
+    .copyright {
+      .container {
+        div {
+          margin-top: 0;
+        }
+      }
+    }
+  }
 `;
 
 export default function Footer() {
@@ -45,30 +63,6 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Social Media"
-            links={[
-              {
-                title: 'LinkedIn',
-                path: 'https://www.linkedin.com/in/anhh-trann/',
-                type: 'Link',
-              },
-              {
-                title: 'itch.io',
-                type: 'Link',
-              },
-              {
-                title: 'GitHub',
-                type: 'Link',
-              },
-              {
-                title: 'YouTube',
-                type: 'Link',
-              },
-            ]}
-          />
-        </div>
-        <div className="footer__col3">
-          <FooterCol
             heading="Email"
             links={[
               {
@@ -81,7 +75,7 @@ export default function Footer() {
       </div>
       <div className="copyright">
         <div className="container">
-          <PText>&copy; 2023 TuanAnh Tran. All rights reserved.</PText>
+          <PText>&copy; 2024 TuanAnh Tran</PText>
         </div>
       </div>
     </FooterStyles>

@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import ExperiencesSection from '../components/ExperiencesSection';
+import Footer from '../components/Footer';
+import AboutInfoItem from '../components/AboutInfoItem';
 
 const InfoStyle = styled.div`
   justify-content: center;
@@ -8,19 +10,34 @@ const InfoStyle = styled.div`
   font-size: 2.2rem;
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
   h1 {
-    margin-bottom 6rem;
+    margin-bottom: 6rem;
     justify-content: center;
     align-items: center;
     line-height: 4rem;
+    color: white;
+  }
+  h2 {
+    margin-bottom: 6rem;
+    line-height: 3rem;
+  }
+  h3 {
+    margin-bottom: 3rem;
+    line-height: 3rem;
   }
   @media only screen and (max-width: 1080px) {
     margin: 8rem 5rem 0;
   }
-  @media only screen and (max-width: 768px){
-   h1 {
-    font-size: 2.8rem;
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    h3 {
+      font-size: 2.1rem;
     }
   }
 `;
@@ -31,7 +48,47 @@ export default function About() {
       <InfoStyle>
         <h1>Experiences</h1>
         <ExperiencesSection />
+        <h1>Education</h1>
+        <h3>Queensland University of Technology</h3>
+        <h2>
+          Bachelor of Information Technology & Games and Interactive
+          Environments (2022)
+        </h2>
+        <h1>Skills</h1>
+        <AboutInfoItem
+          title="Languages"
+          items={[
+            'C#',
+            'JavaScript',
+            'TypeScript',
+            'HTML',
+            'CSS',
+            'C++',
+            'PHP',
+            'Python',
+            'Java',
+          ]}
+        />
+        <AboutInfoItem
+          title="Databases"
+          items={['MySQL', 'MongoDB', 'Microsoft SQL Server']}
+        />
+        <AboutInfoItem
+          title="Libraries and Tools"
+          items={[
+            'ReactJS',
+            'TailwindCSS',
+            'NodeJS',
+            'ASP.NET',
+            'Xamarin',
+            'NextJS',
+            'Unity',
+            'Unreal Engine',
+            'WordPress',
+          ]}
+        />
       </InfoStyle>
+      <Footer />
     </>
   );
 }

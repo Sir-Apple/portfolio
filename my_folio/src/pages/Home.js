@@ -11,12 +11,13 @@ const InfoStyle = styled.div`
   font-size: 2.2rem;
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
-  padding-bottom: 1rem;
+  padding-bottom: 10rem;
   h1 {
     margin-bottom 6rem;
     justify-content: center;
     align-items: center;
     line-height: 4rem;
+    color: white;
   }
   @media only screen and (max-width: 1080px) {
     margin: 8rem 5rem 0;
@@ -65,7 +66,7 @@ export default function Home() {
           development while continually refining my craft to deliver efficient,
           reliable, and secure software solutions.
         </PText>
-        <Button btnLink="/projects" btnText="See my works" />
+        <Button btnLink="/projects" btnText="Download CV" />
       </InfoStyle>
       <Footer />
     </>

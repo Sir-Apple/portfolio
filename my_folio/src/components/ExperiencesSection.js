@@ -17,6 +17,7 @@ const ExperiencesSectionStyle = styled.div`
   }
   .swiper-container {
     padding-top: 8rem;
+    padding-bottom: 8rem;
     max-width: 100%;
   }
   .swiper-button-prev,

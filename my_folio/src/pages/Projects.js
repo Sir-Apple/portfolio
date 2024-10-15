@@ -8,6 +8,7 @@ import personalProjects from '../assets/data/personal_projects';
 import CommercialProjectItem from '../components/CommercialProjectItem';
 import PersonalProjectItem from '../components/PersonalProjectItem';
 import 'swiper/swiper-bundle.min.css';
+import Footer from '../components/Footer';
 
 SwiperCore.use([Navigation]);
 
@@ -19,6 +20,7 @@ const ProjectsSectionStyle = styled.div`
   }
   .swiper-container {
     padding-top: 8rem;
+    padding-bottom: 8rem;
     max-width: 100%;
   }
   .swiper-button-prev,
@@ -61,18 +63,19 @@ const InfoStyle = styled.div`
   font-size: 2.2rem;
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
+  padding-bottom: 2rem;
   h1 {
-    margin-bottom 6rem;
     justify-content: center;
     align-items: center;
     line-height: 4rem;
+    color: white;
   }
   @media only screen and (max-width: 1080px) {
     margin: 8rem 5rem 0;
   }
-  @media only screen and (max-width: 768px){
-   h1 {
-    font-size: 2.8rem;
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.8rem;
     }
   }
 `;
@@ -190,149 +193,152 @@ export default function Projects() {
   };
 
   return (
-    <ProjectsSectionStyle>
-      <InfoStyle>
-        <h1>Commercial Projects</h1>
-        <div className="projects__allItems">
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={3}
-            navigation
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              1490: { slidesPerView: 2 },
-              1920: { slidesPerView: 3 },
-            }}
-          >
-            {commercialProjects.map((project, index) => {
-              if (index >= 5) return null;
-              return (
-                <SwiperSlide key={project.id}>
-                  <CommercialProjectItem
-                    title={project.name}
-                    img={project.img}
-                    company={project.company}
-                    types={project.type}
-                    skills={project.skills}
-                    desc={project.desc}
-                    onClick={() => openModal(project)}
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-      </InfoStyle>
-      <InfoStyle>
-        <h1>Personal Projects</h1>
-        <div className="projects__allItems">
-          <Swiper
-            spaceBetween={30}
-            slidesPerView={3}
-            navigation
-            breakpoints={{
-              640: { slidesPerView: 1 },
-              1490: { slidesPerView: 2 },
-              1920: { slidesPerView: 3 },
-            }}
-          >
-            {personalProjects.map((project, index) => {
-              if (index >= 5) return null;
-              return (
-                <SwiperSlide key={project.id}>
-                  <PersonalProjectItem
-                    title={project.name}
-                    img={project.img}
-                    types={project.type}
-                    skills={project.skills}
-                    desc={project.desc}
-                    onClick={() => openModal(project)}
-                  />
-                </SwiperSlide>
-              );
-            })}
-          </Swiper>
-        </div>
-      </InfoStyle>
-
-      {currentProject && (
-        <ModalOverlay isOpen={isModalOpen}>
-          <ModalContent>
-            <CloseButton onClick={closeModal}>
-              <MdClose />
-            </CloseButton>
-            <div className="modal_company">{currentProject.company}</div>
-            <div className="modal_title">{currentProject.name}</div>
-            <ProjectImage src={currentProject.img} alt={currentProject.name} />
-            <div className="modal_skills">
-              {currentProject.skills.join(', ')}
-            </div>
-            <p className="modal_desc">{currentProject.desc}</p>
-            <ButtonGroup>
-              {currentProject.webLink && (
-                <ModalButton
-                  href={currentProject.webLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Web Live
-                </ModalButton>
-              )}
-              {currentProject.githubLink && (
-                <ModalButton
-                  href={currentProject.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  GitHub
-                </ModalButton>
-              )}
-              {currentProject.gameyoutubeLink && (
-                <ModalButton
-                  href={currentProject.gameyoutubeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Game Demo
-                </ModalButton>
-              )}
-              {currentProject.softwareyoutubeLink && (
-                <ModalButton
-                  href={currentProject.softwareyoutubeLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Interactive Demo
-                </ModalButton>
-              )}
-              {currentProject.downloadLink && (
-                <ModalButton
-                  href={currentProject.downloadLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Download
-                </ModalButton>
-              )}
-              {currentProject.overviewLink && (
-                <ModalButton
-                  href={currentProject.overviewLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="button"
-                >
-                  Overview
-                </ModalButton>
-              )}
-            </ButtonGroup>
-          </ModalContent>
-        </ModalOverlay>
-      )}
-    </ProjectsSectionStyle>
+    <>
+      <ProjectsSectionStyle>
+        <InfoStyle>
+          <h1>Commercial Projects</h1>
+          <div className="projects__allItems">
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                1490: { slidesPerView: 2 },
+                1920: { slidesPerView: 3 },
+              }}
+            >
+              {commercialProjects.map((project, index) => {
+                if (index >= 5) return null;
+                return (
+                  <SwiperSlide key={project.id}>
+                    <CommercialProjectItem
+                      title={project.name}
+                      img={project.img}
+                      company={project.company}
+                      types={project.type}
+                      skills={project.skills}
+                      desc={project.desc}
+                      onClick={() => openModal(project)}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+          <h1>Personal Projects</h1>
+          <div className="projects__allItems">
+            <Swiper
+              spaceBetween={30}
+              slidesPerView={1}
+              navigation
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                1490: { slidesPerView: 2 },
+                1920: { slidesPerView: 3 },
+              }}
+            >
+              {personalProjects.map((project, index) => {
+                if (index >= 5) return null;
+                return (
+                  <SwiperSlide key={project.id}>
+                    <PersonalProjectItem
+                      title={project.name}
+                      img={project.img}
+                      types={project.type}
+                      skills={project.skills}
+                      desc={project.desc}
+                      onClick={() => openModal(project)}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          </div>
+        </InfoStyle>
+        {currentProject && (
+          <ModalOverlay isOpen={isModalOpen}>
+            <ModalContent>
+              <CloseButton onClick={closeModal}>
+                <MdClose />
+              </CloseButton>
+              <div className="modal_company">{currentProject.company}</div>
+              <div className="modal_title">{currentProject.name}</div>
+              <ProjectImage
+                src={currentProject.img}
+                alt={currentProject.name}
+              />
+              <div className="modal_skills">
+                {currentProject.skills.join(', ')}
+              </div>
+              <p className="modal_desc">{currentProject.desc}</p>
+              <ButtonGroup>
+                {currentProject.webLink && (
+                  <ModalButton
+                    href={currentProject.webLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Web Live
+                  </ModalButton>
+                )}
+                {currentProject.githubLink && (
+                  <ModalButton
+                    href={currentProject.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    GitHub
+                  </ModalButton>
+                )}
+                {currentProject.gameyoutubeLink && (
+                  <ModalButton
+                    href={currentProject.gameyoutubeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Game Demo
+                  </ModalButton>
+                )}
+                {currentProject.softwareyoutubeLink && (
+                  <ModalButton
+                    href={currentProject.softwareyoutubeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Interactive Demo
+                  </ModalButton>
+                )}
+                {currentProject.downloadLink && (
+                  <ModalButton
+                    href={currentProject.downloadLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Download
+                  </ModalButton>
+                )}
+                {currentProject.overviewLink && (
+                  <ModalButton
+                    href={currentProject.overviewLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="button"
+                  >
+                    Overview
+                  </ModalButton>
+                )}
+              </ButtonGroup>
+            </ModalContent>
+          </ModalOverlay>
+        )}
+      </ProjectsSectionStyle>
+      <Footer />
+    </>
   );
 }

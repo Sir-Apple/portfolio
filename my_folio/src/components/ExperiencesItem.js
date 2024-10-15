@@ -15,20 +15,20 @@ const ExperiencesItemStyles = styled.div`
     text-align: center;
   }
   .experienceItem__description {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.2rem;
     color: var(--gray-1);
     margin-top: 1rem;
     text-align: center;
   }
   .experienceItem__company {
-    font-size: 1.95rem;
+    font-size: 2.2rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
     text-align: center;
   }
   .experienceItem__timestamp {
-    font-size: 1.85rem;
+    font-size: 2.1rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
     text-align: center;
