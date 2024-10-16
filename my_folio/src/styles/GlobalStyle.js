@@ -49,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
     overflow: hidden;
     background-color: var(--gray-1);
     .scroll-content {
-      background-color: var(--dark-bg);
+      background-color: var(--gray-deep-dark);
     }
     .scrollbar-track.scrollbar-track-y {
       background: var(--deep-dark);

@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
         <div className="footer__col2">
           <FooterCol
-            heading="Email"
+            heading="Reach me out"
             links={[
               {
                 title: 'tranquangtuananh2801@gmail.com',
