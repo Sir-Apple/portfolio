@@ -1,10 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import resumeFile from '../assets/docs/-Resume-.pdf';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import HeroImg2 from '../assets/my_images/hero-home.png';
 import Footer from '../components/Footer';
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
 
 const InfoStyle = styled.div`
   justify-content: center;
@@ -13,6 +22,9 @@ const InfoStyle = styled.div`
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
   padding-bottom: 10rem;
+  opacity: 0;
+  animation: ${fadeIn} 1.5s ease forwards;
+
   h1 {
     margin-bottom 6rem;
     justify-content: center;

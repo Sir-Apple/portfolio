@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { MdClose } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
@@ -57,6 +57,15 @@ const ProjectsSectionStyle = styled.div`
   }
 `;
 
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+`;
+
 const InfoStyle = styled.div`
   justify-content: center;
   align-items: center;
@@ -64,6 +73,9 @@ const InfoStyle = styled.div`
   line-height: 2.1rem;
   margin: 15rem 40rem 0;
   padding-bottom: 2rem;
+  opacity: 0;
+  animation: ${fadeIn} 1.5s ease forwards;
+
   h1 {
     justify-content: center;
     align-items: center;
