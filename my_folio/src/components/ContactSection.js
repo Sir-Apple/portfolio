@@ -2,7 +2,7 @@ import React from 'react';
 import { MdEmail, MdPlace } from 'react-icons/md';
 import styled from 'styled-components';
 import ContactInfoItem from './ContactInfoItem';
-import ContactForm from './ContactForm';
+// import ContactForm from './ContactForm';
 
 const ContactSectionStyle = styled.div`
   padding: 10rem 0;
@@ -58,9 +58,9 @@ export default function ContactSection() {
             text="tranquangtuananh2801@gmail.com"
           />
         </div>
-        <div className="right">
+        {/* <div className="right">
           <ContactForm />
-        </div>
+        </div> */}
       </div>
     </ContactSectionStyle>
   );
