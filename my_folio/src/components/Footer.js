@@ -13,7 +13,8 @@ const FooterStyles = styled.div`
   .footer__col1 {
     flex: 2;
   }
-  .footer__col2 {
+  .footer__col2,
+  .footer__col3 {
     flex: 1;
   }
   .footer__col1__title {
@@ -68,6 +69,17 @@ export default function Footer() {
               {
                 title: 'tranquangtuananh2801@gmail.com',
                 path: 'mailto:tranquangtuananh2801@gmail.com',
+              },
+            ]}
+          />
+        </div>
+        <div className="footer__col3">
+          <FooterCol
+            heading="Built with ReactJS"
+            links={[
+              {
+                title: 'GitHub',
+                path: 'https://github.com/Sir-Apple/portfolio',
               },
             ]}
           />

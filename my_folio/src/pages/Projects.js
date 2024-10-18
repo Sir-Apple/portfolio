@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import { MdClose } from 'react-icons/md';
+// import { MdClose } from 'react-icons/md';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation } from 'swiper';
 import commercialProjects from '../assets/data/commercial_projects';
@@ -271,9 +271,7 @@ export default function Projects() {
         {currentProject && (
           <ModalOverlay isOpen={isModalOpen}>
             <ModalContent>
-              <CloseButton onClick={closeModal}>
-                <MdClose />
-              </CloseButton>
+              <CloseButton onClick={closeModal}>X</CloseButton>
               <div className="modal_company">{currentProject.company}</div>
               <div className="modal_title">{currentProject.name}</div>
               <ProjectImage

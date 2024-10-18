@@ -22,13 +22,20 @@ const ExperiencesItemStyles = styled.div`
     text-align: center;
   }
   .experienceItem__company {
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
     text-align: center;
   }
-  .experienceItem__timestamp {
-    font-size: 2.1rem;
+  .experienceItem__timestamp,
+  .experienceItem__skills {
+    font-size: 2rem;
+    color: var(--gray-1);
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .experienceItem__location {
+    font-size: 2.5rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
     text-align: center;
@@ -39,6 +46,8 @@ export default function ExperiencesItem({
   company = 'Company Name',
   position = 'Position Title',
   timestamp = 'Timestamp',
+  location = 'Location',
+  skills = 'Skills',
   descr = ['Description'],
 }) {
   const parseText = (text) =>
@@ -76,6 +85,8 @@ export default function ExperiencesItem({
         <p className="experienceItem__timestamp">{timestamp}</p>
         <p className="experienceItem__company">{company}</p>
         <h3 className="experienceItem__title">{position}</h3>
+        <p className="experienceItem__location">{location}</p>
+        <p className="experienceItem__skills">Skills: {skills}</p>
         <div className="experienceItem__description">
           {descr.map((desc, index) => (
             <div className="experience__item" key={index}>

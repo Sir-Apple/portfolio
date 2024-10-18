@@ -66,7 +66,9 @@ export default function ExperiencesSection() {
                 <ExperiencesItem
                   position={experience.position}
                   timestamp={experience.timestamp}
+                  location={experience.location}
                   company={experience.org}
+                  skills={experience.skills}
                   descr={experience.desc}
                 />
               </SwiperSlide>
