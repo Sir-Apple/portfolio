@@ -65,7 +65,7 @@ export default function About() {
         <h3>Queensland University of Technology</h3>
         <h2>
           Bachelor of Information Technology & Games and Interactive
-          Environments (2022)
+          Environments
         </h2>
         <h1>Skills</h1>
         <AboutInfoItem
