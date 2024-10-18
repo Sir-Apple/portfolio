@@ -29,7 +29,7 @@ const projects = [
   {
     id: uuidv4(),
     name: 'The Haunted',
-    type: ['Interactive'],
+    type: ['Game'],
     skills: ['Unity', 'C#'],
     desc:
       'The Haunted is a short First-person horror and escape-room game. The game begins when the player is stuck inside a completely dark and blacked-out haunted house, the only light sources are candles and the head-mounted flashlight that the character bought with him. The player then is required to unlock doors and puzzles in order to escape from the haunted house as well as run away from the ghost, which interrupts the player.',
