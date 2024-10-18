@@ -10,7 +10,7 @@ const projects = [
     type: ['Web'],
     skills: ['ReactJS', 'HTML', 'CSS', 'JavaScript'],
     desc:
-      'This Movie Trackr App is made with ReactJS with the purpose of searching for movies and their details fetched from TMDB. The user will be able to search for the movie they like then save to their watchlist or watchedlist.',
+      'This Mini Movie Trackr App is made with ReactJS with the purpose of searching for movies and their details fetched from TMDB. The user will be able to search for the movie they like then save to their watchlist or watchedlist.',
     img: MovieAppImage,
     webLink: 'https://sir-apple.github.io/MovieTrackr/',
     githubLink: 'https://github.com/Sir-Apple/MovieTrackr',
