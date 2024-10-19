@@ -35,7 +35,7 @@ const ExperiencesItemStyles = styled.div`
     text-align: center;
   }
   .experienceItem__location {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: var(--gray-1);
     margin-bottom: 1rem;
     text-align: center;
@@ -84,8 +84,8 @@ export default function ExperiencesItem({
       <div className="experienceItem__info">
         <p className="experienceItem__timestamp">{timestamp}</p>
         <p className="experienceItem__company">{company}</p>
-        <h3 className="experienceItem__title">{position}</h3>
         <p className="experienceItem__location">{location}</p>
+        <h3 className="experienceItem__title">{position}</h3>
         <p className="experienceItem__skills">Skills: {skills}</p>
         <div className="experienceItem__description">
           {descr.map((desc, index) => (
