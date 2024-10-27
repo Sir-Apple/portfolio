@@ -6,4 +6,4 @@ Technology used:
 - CSS
 
 ## Description
-This is my second version of personal portfolio, featuring my projects, skills, and works
+This is my another version of personal portfolio, which featuring my projects, skills, and works
