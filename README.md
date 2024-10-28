@@ -9,4 +9,4 @@ Technology used:
 This is my another version of personal portfolio, which featuring my projects, skills, and works.
 
 ## Testing
-The website can be viewed here: 
+The website can be viewed here: sir-apple.github.io/portfolio/
