@@ -21,7 +21,7 @@ const projects = [
     id: uuidv4(),
     name: 'Epoch 2140',
     company: 'Epoch',
-    type: ['Web', 'Game', 'Interactive'],
+    type: ['Web', 'Game', 'Interaction'],
     skills: ['HTML', 'CSS', 'JavaScript', 'Unity', 'C#'],
     desc:
       'Epoch2140 is a sport-style trading card game where players recruit, strategize, and lead their teams to victory, built with Unity and C#. (Currently in development). The landing page, made with HTML, CSS, and JavaScript, provides game details, while the 3D interactive page, also built with Unity and C#, showcases teams and cards.',
@@ -34,7 +34,7 @@ const projects = [
     id: uuidv4(),
     name: 'OGH AR Simulator',
     company: 'Wicked Interactive StoryTelling',
-    type: ['Interactive'],
+    type: ['Interaction'],
     skills: ['Unity', 'C#'],
     desc:
       'This project is a tour-based experience and simulator application that places the player/user in a position in order to explore the QUT Old Government House in old-timer when it was in active use where the old Queensland Governors were still working and staying at which will be showing on their phone with the app installed. This interaction is made with Unity and C#.',
