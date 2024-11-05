@@ -310,7 +310,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="button"
                   >
-                    Game Demo
+                    Game Updates
                   </ModalButton>
                 )}
                 {currentProject.softwareyoutubeLink && (
@@ -320,7 +320,7 @@ export default function Projects() {
                     rel="noopener noreferrer"
                     className="button"
                   >
-                    Interactive Demo
+                    Interaction
                   </ModalButton>
                 )}
                 {currentProject.downloadLink && (
