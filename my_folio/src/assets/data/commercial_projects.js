@@ -24,7 +24,7 @@ const projects = [
     type: ['Web', 'Game', 'Interaction'],
     skills: ['HTML', 'CSS', 'JavaScript', 'Unity', 'C#'],
     desc:
-      'Epoch2140 is a sport-style trading card game where players recruit, strategize, and lead their teams to victory, built with Unity and C#. (Currently in development). The landing page, made with HTML, CSS, and JavaScript, provides game details, while the 3D interactive page, also built with Unity and C#, showcases teams and cards.',
+      'Epoch2140 is a sport-style trading card game where players recruit, strategize, and lead their teams to victory, built with Unity and C#. (Currently in development). The landing page, made with HTML, CSS, and JavaScript, provides game details, while the 3D interaction page, also built with Unity and C#, showcases teams and cards.',
     img: EpochImg,
     webLink: 'https://epoch2140.com/',
     gameyoutubeLink: 'https://www.youtube.com/watch?v=WTUkFY_wgHg',
@@ -37,7 +37,7 @@ const projects = [
     type: ['Interaction'],
     skills: ['Unity', 'C#'],
     desc:
-      'This project is a tour-based experience and simulator application that places the player/user in a position in order to explore the QUT Old Government House in old-timer when it was in active use where the old Queensland Governors were still working and staying at which will be showing on their phone with the app installed. This interaction is made with Unity and C#.',
+      'This interaction program is a tour-based experience and simulator application that places the player/user in a position in order to explore the QUT Old Government House in old-timer when it was in active use where the old Queensland Governors were still working and staying at which will be showing on their phone with the app installed. This interaction is made with Unity and C#.',
     img: OGHImg,
     githubLink: 'https://github.com/ybott/IFB398-Prototype',
     downloadLink: 'https://sadapple.itch.io/old-government-house-ar-simulator',
