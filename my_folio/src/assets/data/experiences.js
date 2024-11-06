@@ -8,7 +8,7 @@ const experiences = [
     skills: 'Unity, C#',
     desc: [
       'Currently contributing remotely to a small studio, collaborating with a senior software engineer and international artists and designers (from Vietnam, Japan and Canada) on the mobile and desktop game Battle of Lords: Advance Chess.',
-      'Responsible for implementing complex chess movements and animations using advanced <b> Unity/C# </b> programming techniques fora seamless user experience.',
+      'Responsible for implementing complex chess movements and animations using <b> Unity/C# </b> programming techniques.',
       'Actively involved in design discussions and problem-solving sessions to enhance the chess gaming interface and contribute to the projects overall progress.',
     ],
   },
