@@ -4,6 +4,30 @@ import ExperiencesSection from '../components/ExperiencesSection';
 import Footer from '../components/Footer';
 import AboutInfoItem from '../components/AboutInfoItem';
 
+import CSharpIcon from '../assets/my_images/c-sharp.svg';
+import JavaScriptIcon from '../assets/my_images/javascript.svg';
+import TypeScriptIcon from '../assets/my_images/typescript.svg';
+import HTMLIcon from '../assets/my_images/html.svg';
+import CSSIcon from '../assets/my_images/css.svg';
+import CPlusPlusIcon from '../assets/my_images/cplusplus.svg';
+import PHPIcon from '../assets/my_images/php.svg';
+import PythonIcon from '../assets/my_images/python.svg';
+import JavaIcon from '../assets/my_images/java.svg';
+import MySQLIcon from '../assets/my_images/mysql.svg';
+import MongoDBIcon from '../assets/my_images/mongodb.svg';
+import MicrosoftSQLIcon from '../assets/my_images/microsoft-sql-server.svg';
+import PostgreSQLIcon from '../assets/my_images/postgresql.svg';
+// import SQLiteIcon from '../assets/my_images/sqlite.svg';
+import ReactIcon from '../assets/my_images/react.svg';
+import TailwindCSSIcon from '../assets/my_images/tailwind-css.svg';
+import NodeJSIcon from '../assets/my_images/nodejs.svg';
+import ASPNetIcon from '../assets/my_images/aspnet.svg';
+import XamarinIcon from '../assets/my_images/xamarin.svg';
+import NextJSIcon from '../assets/my_images/nextjs.svg';
+import UnityIcon from '../assets/my_images/unity.svg';
+import UnrealEngineIcon from '../assets/my_images/unreal-engine.svg';
+import WordPressIcon from '../assets/my_images/wordpress.svg';
+
 const fadeIn = keyframes`
   0% {
     opacity: 0;
@@ -71,40 +95,38 @@ export default function About() {
         <AboutInfoItem
           title="Languages and Programming Languages"
           items={[
-            'C#',
-            'JavaScript',
-            'TypeScript',
-            'HTML',
-            'CSS',
-            'C++',
-            'PHP',
-            'Python',
-            'Java',
+            <img src={CSharpIcon} alt="C#" />,
+            <img src={JavaScriptIcon} alt="JavaScript" />,
+            <img src={TypeScriptIcon} alt="TypeScript" />,
+            <img src={HTMLIcon} alt="HTML" />,
+            <img src={CSSIcon} alt="CSS" />,
+            <img src={CPlusPlusIcon} alt="CPlusCplus" />,
+            <img src={PHPIcon} alt="PHP" />,
+            <img src={PythonIcon} alt="Python" />,
+            <img src={JavaIcon} alt="Java" />,
           ]}
         />
         <AboutInfoItem
           title="Database Management Systems / Document"
           items={[
-            'MySQL',
-            'MongoDB',
-            'Microsoft SQL Server',
-            'PostgreSQL',
-            'NoSQL',
-            'SQLite',
+            <img src={MySQLIcon} alt="MySQL" />,
+            <img src={MongoDBIcon} alt="MongoDB" />,
+            <img src={MicrosoftSQLIcon} alt="MicrosoftSQL" />,
+            <img src={PostgreSQLIcon} alt="PostgreSQL" />,
           ]}
         />
         <AboutInfoItem
           title="Libraries and Tools"
           items={[
-            'ReactJS',
-            'TailwindCSS',
-            'NodeJS',
-            'ASP.NET Core',
-            'Xamarin',
-            'NextJS',
-            'Unity',
-            'Unreal Engine',
-            'WordPress',
+            <img src={ReactIcon} alt="React" />,
+            <img src={TailwindCSSIcon} alt="TailwindCSS" />,
+            <img src={NodeJSIcon} alt="NodeJS" />,
+            <img src={ASPNetIcon} alt="ASPNet" />,
+            <img src={XamarinIcon} alt="Xamarin" />,
+            <img src={NextJSIcon} alt="NextJS" />,
+            <img src={UnityIcon} alt="Unity" />,
+            <img src={UnrealEngineIcon} alt="Unreal Engine" />,
+            <img src={WordPressIcon} alt="Wordpress" />,
           ]}
         />
       </InfoStyle>
