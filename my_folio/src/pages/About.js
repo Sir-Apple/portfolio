@@ -4,6 +4,7 @@ import ExperiencesSection from '../components/ExperiencesSection';
 import Footer from '../components/Footer';
 import AboutInfoItem from '../components/AboutInfoItem';
 
+// SVG Images
 import CSharpIcon from '../assets/my_images/c-sharp.svg';
 import JavaScriptIcon from '../assets/my_images/javascript.svg';
 import TypeScriptIcon from '../assets/my_images/typescript.svg';
