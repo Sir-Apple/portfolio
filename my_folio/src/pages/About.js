@@ -116,7 +116,7 @@ export default function About() {
           ]}
         />
         <AboutInfoItem
-          title="Libraries and Tools"
+          title="Libraries / Frameworks and Tools"
           items={[
             <img src={ReactIcon} alt="React" />,
             <img src={TailwindCSSIcon} alt="TailwindCSS" />,

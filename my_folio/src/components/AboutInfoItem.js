@@ -15,7 +15,7 @@ const AboutItemStyles = styled.div`
   .items {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.2rem;
     margin: -30px auto 1rem 2rem;
   }
   .item {
