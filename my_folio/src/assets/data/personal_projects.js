@@ -8,7 +8,7 @@ const projects = [
     id: uuidv4(),
     name: 'Movie Trackr',
     type: ['Web'],
-    skills: ['ReactJS', 'HTML', 'CSS', 'JavaScript'],
+    skills: ['ReactJS', 'CSS', 'JavaScript'],
     desc:
       'This Mini Movie Trackr App is made with ReactJS with the purpose of searching for movies and their details fetched from TMDB. The user will be able to search for the movie they like then save to their watchlist or watchedlist.',
     img: MovieAppImage,
