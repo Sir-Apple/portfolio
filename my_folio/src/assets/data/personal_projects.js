@@ -9,8 +9,7 @@ const projects = [
     name: 'Movie Trackr',
     type: ['Web'],
     skills: ['ReactJS', 'CSS', 'JavaScript'],
-    desc:
-      'This Mini Movie Trackr App is made with ReactJS with the purpose of searching for movies and their details fetched from TMDB. The user will be able to search for the movie they like then save to their watchlist or watchedlist.',
+    desc: 'This Mini Movie Trackr App is made with ReactJS with the purpose of searching for movies and their details fetched from TMDB. The user will be able to search for the movie they like then save to their watchlist or watchedlist.',
     img: MovieAppImage,
     webLink: 'https://sir-apple.github.io/MovieTrackr/',
     githubLink: 'https://github.com/Sir-Apple/MovieTrackr',
@@ -20,8 +19,7 @@ const projects = [
     name: 'Personal Portfolio (Old Version)',
     type: ['Web'],
     skills: ['HTML', 'CSS', 'JavaScript'],
-    desc:
-      'My previous version of my portfolio, made with HTML, CSS, and JavaScript',
+    desc: 'My previous version of my portfolio, made with HTML, CSS, and JavaScript',
     img: OldPortfolioImg,
     webLink: 'https://sir-apple-github-io.vercel.app/',
     githubLink: 'https://github.com/Sir-Apple/Sir-Apple.github.io',
@@ -31,8 +29,7 @@ const projects = [
     name: 'The Haunted',
     type: ['Game'],
     skills: ['Unity', 'C#'],
-    desc:
-      'The Haunted is a short First-person horror and escape-room game. The game begins when the player is stuck inside a completely dark and blacked-out haunted house, the only light sources are candles and the head-mounted flashlight that the character bought with him. The player then is required to unlock doors and puzzles in order to escape from the haunted house as well as run away from the ghost, which interrupts the player.',
+    desc: 'The Haunted is a short First-person horror and escape-room game. The game begins when the player is stuck inside a completely dark and blacked-out haunted house, the only light sources are candles and the head-mounted flashlight that the character bought with him. The player then is required to unlock doors and puzzles in order to escape from the haunted house as well as run away from the ghost, which interrupts the player.',
     img: TheHaunted,
     downloadLink: 'https://sadapple.itch.io/the-haunted',
   },
