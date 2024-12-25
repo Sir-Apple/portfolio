@@ -26,7 +26,7 @@ import ASPNetIcon from '../assets/my_images/aspnet.svg';
 import XamarinIcon from '../assets/my_images/xamarin.svg';
 import NextJSIcon from '../assets/my_images/nextjs.svg';
 import UnityIcon from '../assets/my_images/unity.svg';
-// import UnrealEngineImg from '../assets/my_images/unreal-engine.svg';
+import UnrealEngineImg from '../assets/my_images/unreal.png';
 import WordPressIcon from '../assets/my_images/wordpress.svg';
 
 const fadeIn = keyframes`
@@ -126,7 +126,7 @@ export default function About() {
             <img src={XamarinIcon} alt="Xamarin" />,
             <img src={NextJSIcon} alt="NextJS" />,
             <img src={UnityIcon} alt="Unity" />,
-            // <img src={UnrealEngineImg} alt="Unreal Engine" />,
+            <img src={UnrealEngineImg} alt="Unreal Engine" />,
             <img src={WordPressIcon} alt="Wordpress" />,
           ]}
         />
