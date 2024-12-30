@@ -30,7 +30,7 @@ const InfoStyle = styled.div`
     justify-content: center;
     align-items: center;
     line-height: 4rem;
-    color: white;
+    color: var(--white);
   }
   @media only screen and (max-width: 1080px) {
     margin: 8rem 5rem 0;
