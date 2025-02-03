@@ -35,7 +35,7 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Personal Portfolio (Old Version)',
+    name: 'Personal Portfolio (G Version)',
     type: ['Web'],
     skills: ['HTML', 'CSS', 'JavaScript'],
     desc: 'My previous version of my portfolio, made with HTML, CSS, and JavaScript',
