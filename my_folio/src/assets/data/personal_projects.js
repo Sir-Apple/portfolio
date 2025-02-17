@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import MovieAppImage from '../my_images/movieapp.PNG';
 import OldPortfolioImg from '../my_images/oldportfolio.PNG';
 import FooBooLooImg from '../my_images/foobooloo.PNG';
+import BanknoteCollectImg from '../my_images/banknotecollection.PNG';
 import TheHaunted from '../my_images/thehauntedbg.jpg';
 import HerbivoreDelightImg from '../my_images/HerDelightApp.PNG';
 
@@ -10,8 +11,8 @@ const projects = [
     id: uuidv4(),
     name: 'FooBooLoo Challenge',
     type: ['Web'],
-    skills: ['Vite', 'TypeScript', 'ReactJS', 'Tailwind CSS'],
-    desc: 'A mini game off Fizz-Buzz like game based on the same fundamental rules.',
+    skills: ['TypeScript', 'ReactJS', 'Tailwind CSS'],
+    desc: 'A mini web game of Fizz-Buzz like game based on the same fundamental rules, just a bit harder.',
     img: FooBooLooImg,
     webLink: 'https://foobooloo-challenge.netlify.app/',
     githubLink: 'https://github.com/Sir-Apple/foobooloo-challenge',
@@ -34,6 +35,16 @@ const projects = [
     desc: 'A vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
     img: HerbivoreDelightImg,
     webLink: 'https://herbivoresdelight.wordpress.com/',
+  },
+  {
+    id: uuidv4(),
+    name: 'World Banknotes Collection',
+    type: ['Web'],
+    skills: ['TypeScript', 'ReactJS', 'Tailwind CSS'],
+    desc: 'Displays a collection of the highest denomination banknotes from around the world. The collection shows the front and back side of each banknote',
+    img: BanknoteCollectImg,
+    webLink: 'https://world-banknote-collection.netlify.app/',
+    githubLink: 'https://github.com/Sir-Apple/banknote-collection',
   },
   {
     id: uuidv4(),
