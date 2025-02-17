@@ -1,10 +1,21 @@
 import { v4 as uuidv4 } from 'uuid';
 import MovieAppImage from '../my_images/movieapp.PNG';
 import OldPortfolioImg from '../my_images/oldportfolio.PNG';
+import FooBooLooImg from '../my_images/foobooloo.PNG';
 import TheHaunted from '../my_images/thehauntedbg.jpg';
 import HerbivoreDelightImg from '../my_images/HerDelightApp.PNG';
 
 const projects = [
+  {
+    id: uuidv4(),
+    name: 'FooBooLoo Challenge',
+    type: ['Web'],
+    skills: ['Vite', 'TypeScript', 'ReactJS', 'Tailwind CSS'],
+    desc: 'A mini game off Fizz-Buzz like game based on the same fundamental rules.',
+    img: FooBooLooImg,
+    webLink: 'https://foobooloo-challenge.netlify.app/',
+    githubLink: 'https://github.com/Sir-Apple/foobooloo-challenge',
+  },
   {
     id: uuidv4(),
     name: 'Movie Trackr',
@@ -38,7 +49,7 @@ const projects = [
     name: 'Personal Portfolio (G Version)',
     type: ['Web'],
     skills: ['HTML', 'CSS', 'JavaScript'],
-    desc: 'My previous version of my portfolio, made with HTML, CSS, and JavaScript',
+    desc: 'My G version of my portfolio, made with HTML, CSS, and JavaScript',
     img: OldPortfolioImg,
     webLink: 'https://sir-apple-github-io.vercel.app/',
     githubLink: 'https://github.com/Sir-Apple/Sir-Apple.github.io',
