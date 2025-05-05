@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import resumeFile from '../assets/docs/-Resume-.pdf';
+import resumeFile from '../assets/docs/AnhTranCV.pdf';
 import PText from '../components/PText';
 import Button from '../components/Button';
 import HeroImg2 from '../assets/my_images/hero-home.png';
