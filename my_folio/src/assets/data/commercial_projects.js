@@ -41,16 +41,6 @@ const projects = [
   },
   {
     id: uuidv4(),
-    name: 'Greater Powers of Gods and Heroes',
-    company: 'Darkstar Games',
-    type: ['Game'],
-    skills: ['Unity', 'C#'],
-    desc: 'In the game greater powers you, the player, will be able to lead a mighty army based on your high powered heavily armed magical skyship, and engage in massive fleet actions with not only epic ship to ship combat, but full real time boarding actions involving hundreds of enemies and allies battling all at once. The game is made with Unity and C#. (Currently in development) ',
-    img: GPGHImg,
-    overviewLink: 'https://darkstargames.net/greaterpowers/',
-  },
-  {
-    id: uuidv4(),
     name: 'Battle of Lords: Advance Chess',
     company: 'Advance Studio',
     type: ['Game'],
