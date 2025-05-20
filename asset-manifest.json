@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.23883dd6.css",
-    "main.js": "/portfolio/static/js/main.66945327.js",
+    "main.js": "/portfolio/static/js/main.c2ad9081.js",
     "static/media/advancechess.PNG": "/portfolio/static/media/advancechess.09efb779f3fea56779e0.PNG",
     "static/media/oldgovarsim.png": "/portfolio/static/media/oldgovarsim.90421ed101c25e03bd8a.png",
     "static/media/HerDelightApp.PNG": "/portfolio/static/media/HerDelightApp.b10493ef23ec84f88922.PNG",
@@ -23,6 +23,7 @@
     "static/media/foobooloo.PNG": "/portfolio/static/media/foobooloo.d3d400e9623054678994.PNG",
     "static/media/unreal.png": "/portfolio/static/media/unreal.ca43861ad5c56fc295be.png",
     "static/media/Iceland-Regular.ttf": "/portfolio/static/media/Iceland-Regular.7e45c1c08b547e6668ab.ttf",
+    "static/media/Avatar.png": "/portfolio/static/media/Avatar.23211e0b8e59a51c8352.png",
     "static/media/oldportfolio.PNG": "/portfolio/static/media/oldportfolio.fda3e3716c060c2bae3c.PNG",
     "static/media/projectImg.png": "/portfolio/static/media/projectImg.771236e1a97e2201a189.png",
     "static/media/postgresql.svg": "/portfolio/static/media/postgresql.ae92b576b8ea41666538c0756df27969.svg",
@@ -48,10 +49,10 @@
     "static/media/css.svg": "/portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "main.23883dd6.css.map": "/portfolio/static/css/main.23883dd6.css.map",
-    "main.66945327.js.map": "/portfolio/static/js/main.66945327.js.map"
+    "main.c2ad9081.js.map": "/portfolio/static/js/main.c2ad9081.js.map"
   },
   "entrypoints": [
     "static/css/main.23883dd6.css",
-    "static/js/main.66945327.js"
+    "static/js/main.c2ad9081.js"
   ]
 }
