@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.23883dd6.css",
-    "main.js": "/portfolio/static/js/main.d4b5476c.js",
+    "main.js": "/portfolio/static/js/main.8bfe879c.js",
     "static/media/advancechess.PNG": "/portfolio/static/media/advancechess.09efb779f3fea56779e0.PNG",
     "static/media/oldgovarsim.png": "/portfolio/static/media/oldgovarsim.90421ed101c25e03bd8a.png",
     "static/media/HerDelightApp.PNG": "/portfolio/static/media/HerDelightApp.b10493ef23ec84f88922.PNG",
@@ -49,10 +49,10 @@
     "static/media/css.svg": "/portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "main.23883dd6.css.map": "/portfolio/static/css/main.23883dd6.css.map",
-    "main.d4b5476c.js.map": "/portfolio/static/js/main.d4b5476c.js.map"
+    "main.8bfe879c.js.map": "/portfolio/static/js/main.8bfe879c.js.map"
   },
   "entrypoints": [
     "static/css/main.23883dd6.css",
-    "static/js/main.d4b5476c.js"
+    "static/js/main.8bfe879c.js"
   ]
 }
