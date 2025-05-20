@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.23883dd6.css",
-    "main.js": "/portfolio/static/js/main.7dbf66ea.js",
+    "main.js": "/portfolio/static/js/main.66945327.js",
     "static/media/advancechess.PNG": "/portfolio/static/media/advancechess.09efb779f3fea56779e0.PNG",
     "static/media/oldgovarsim.png": "/portfolio/static/media/oldgovarsim.90421ed101c25e03bd8a.png",
     "static/media/HerDelightApp.PNG": "/portfolio/static/media/HerDelightApp.b10493ef23ec84f88922.PNG",
@@ -15,6 +15,7 @@
     "static/media/Montserrat-SemiBold.ttf": "/portfolio/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
     "static/media/AnhTranCV.pdf": "/portfolio/static/media/AnhTranCV.1410dfe30f6a8bd9fcc7.pdf",
     "static/media/hero-2.png": "/portfolio/static/media/hero-2.a49c0cf93ca18b660015.png",
+    "static/media/HerbivoreDelight.JPG": "/portfolio/static/media/HerbivoreDelight.627def7fc1c4769350b8.JPG",
     "static/media/codinginthepark.png": "/portfolio/static/media/codinginthepark.f57fcc19a16e9f043296.png",
     "static/media/BigShouldersDisplay-Medium.ttf": "/portfolio/static/media/BigShouldersDisplay-Medium.faa156d41caab19d03da.ttf",
     "static/media/BigShouldersDisplay-Regular.ttf": "/portfolio/static/media/BigShouldersDisplay-Regular.bb81c7d985c7b4a1ad00.ttf",
@@ -47,10 +48,10 @@
     "static/media/css.svg": "/portfolio/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
     "static/media/html.svg": "/portfolio/static/media/html.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "main.23883dd6.css.map": "/portfolio/static/css/main.23883dd6.css.map",
-    "main.7dbf66ea.js.map": "/portfolio/static/js/main.7dbf66ea.js.map"
+    "main.66945327.js.map": "/portfolio/static/js/main.66945327.js.map"
   },
   "entrypoints": [
     "static/css/main.23883dd6.css",
-    "static/js/main.7dbf66ea.js"
+    "static/js/main.66945327.js"
   ]
 }
