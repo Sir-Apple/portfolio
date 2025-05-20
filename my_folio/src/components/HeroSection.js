@@ -137,7 +137,7 @@ export default function HeroSection() {
         setShowAltImage((prev) => !prev);
         setIsGlitching(false);
       }, 400);
-    }, 6000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, []);
