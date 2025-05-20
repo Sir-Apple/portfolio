@@ -92,7 +92,7 @@ const HeroDetailsStyles = styled.div`
 const HeroSocialStyles = styled.div`
   display: flex;
   justify-content: center;
-  width: 12.5rem;
+  width: 12.8rem;
   margin: 0 auto;
   a {
     color: white;
