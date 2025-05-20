@@ -5,8 +5,28 @@ import FooBooLooImg from '../my_images/foobooloo.PNG';
 import BanknoteCollectImg from '../my_images/banknotecollection.PNG';
 import TheHaunted from '../my_images/thehauntedbg.jpg';
 import HerbivoreDelightImg from '../my_images/HerDelightApp.PNG';
+import HerbivoreDelightImg2 from '../my_images/HerbivoreDelight.JPG';
 
 const projects = [
+  {
+    id: uuidv4(),
+    name: 'Herbivores Delight',
+    type: ['Web'],
+    skills: ['NextJS', 'Tailwind CSS', 'TypeScript', 'GraphQL'],
+    desc: 'A vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
+    img: HerbivoreDelightImg2,
+    webLink: 'https://herbivore-delight.netlify.app/',
+    githubLink: 'https://github.com/Sir-Apple/vegetarian-recipes',
+  },
+  {
+    id: uuidv4(),
+    name: 'The Haunted',
+    type: ['Game'],
+    skills: ['Unity', 'C#'],
+    desc: 'The Haunted is a short First-person horror and escape-room game. The game begins when the player is stuck inside a completely dark and blacked-out haunted house, the only light sources are candles and the head-mounted flashlight that the character bought with him. The player then is required to unlock doors and puzzles in order to escape from the haunted house as well as run away from the ghost, which interrupts the player.',
+    img: TheHaunted,
+    downloadLink: 'https://sadapple.itch.io/the-haunted',
+  },
   {
     id: uuidv4(),
     name: 'FooBooLoo Challenge',
@@ -32,18 +52,9 @@ const projects = [
     name: "Herbivore's Delight",
     type: ['Web'],
     skills: ['WordPress'],
-    desc: 'A vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
+    desc: 'A WordPress vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
     img: HerbivoreDelightImg,
     webLink: 'https://herbivoresdelight.wordpress.com/',
-  },
-  {
-    id: uuidv4(),
-    name: 'The Haunted',
-    type: ['Game'],
-    skills: ['Unity', 'C#'],
-    desc: 'The Haunted is a short First-person horror and escape-room game. The game begins when the player is stuck inside a completely dark and blacked-out haunted house, the only light sources are candles and the head-mounted flashlight that the character bought with him. The player then is required to unlock doors and puzzles in order to escape from the haunted house as well as run away from the ghost, which interrupts the player.',
-    img: TheHaunted,
-    downloadLink: 'https://sadapple.itch.io/the-haunted',
   },
   {
     id: uuidv4(),

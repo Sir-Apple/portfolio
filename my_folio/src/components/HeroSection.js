@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaItchIo, FaGithub, FaYoutube } from 'react-icons/fa';
 import styled from 'styled-components';
 import HeroImg from '../assets/my_images/hero-2.png';
+import HeroImg2 from '../assets/my_images/Avatar.png';
 
 const words = ['Software', 'FullStack', 'Games'];
 
@@ -41,8 +42,46 @@ const HeroImgStyles = styled.div`
   justify-content: center;
   align-items: center;
   width: 15rem;
+  height: 15rem;
   border: 1px solid white;
   border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: ${(props) =>
+      props.glitch ? 'glitchAnim 0.4s ease-in-out' : 'none'};
+  }
+
+  @keyframes glitchAnim {
+    0% {
+      transform: translate(0);
+      opacity: 1;
+    }
+    20% {
+      transform: translate(-2px, 2px);
+      opacity: 0.8;
+    }
+    40% {
+      transform: translate(2px, -2px);
+      opacity: 0.6;
+    }
+    60% {
+      transform: translate(-1px, 1px);
+      opacity: 0.8;
+    }
+    80% {
+      transform: translate(1px, -1px);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
 `;
 
 const HeroDetailsStyles = styled.div`
@@ -67,6 +106,8 @@ const HeroSocialStyles = styled.div`
 `;
 
 export default function HeroSection() {
+  const [isGlitching, setIsGlitching] = useState(false);
+  const [showAltImage, setShowAltImage] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayWord, setDisplayWord] = useState(words[currentWordIndex]);
 
@@ -88,11 +129,25 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, [currentWordIndex]);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsGlitching(true);
+
+      setTimeout(() => {
+        setShowAltImage((prev) => !prev);
+        setIsGlitching(false);
+      }, 400);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <HeroSectionStyles>
-      <HeroImgStyles>
-        <img src={HeroImg} alt="hero" />
+      <HeroImgStyles glitch={isGlitching}>
+        <img src={showAltImage ? HeroImg2 : HeroImg} alt="hero" />
       </HeroImgStyles>
+
       <div className="hero__info">
         <p>Name</p>
         <HeroDetailsStyles>TuanAnh Tran</HeroDetailsStyles>
