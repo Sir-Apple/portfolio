@@ -20,6 +20,7 @@ import MicrosoftSQLIcon from '../assets/my_images/microsoft-sql-server.svg';
 import PostgreSQLIcon from '../assets/my_images/postgresql.svg';
 // import SQLiteIcon from '../assets/my_images/sqlite.svg';
 import ReactIcon from '../assets/my_images/react.svg';
+import VueIcon from '../assets/my_images/vuejs.png';
 import TailwindCSSIcon from '../assets/my_images/tailwind-css.svg';
 import NodeJSIcon from '../assets/my_images/nodejs.svg';
 import ASPNetIcon from '../assets/my_images/aspnet.svg';
@@ -120,6 +121,7 @@ export default function About() {
           title="Libraries / Frameworks and Tools"
           items={[
             <img src={ReactIcon} alt="React" />,
+            <img src={VueIcon} alt="Vue" />,
             <img src={TailwindCSSIcon} alt="TailwindCSS" />,
             <img src={NodeJSIcon} alt="NodeJS" />,
             <img src={ASPNetIcon} alt="ASPNet" />,

@@ -6,6 +6,7 @@ import BanknoteCollectImg from '../my_images/banknotecollection.PNG';
 import TheHaunted from '../my_images/thehauntedbg.jpg';
 import HerbivoreDelightImg from '../my_images/HerDelightApp.PNG';
 import HerbivoreDelightImg2 from '../my_images/HerbivoreDelight.JPG';
+import MangaSpaceImg from '../my_images/manga-space.JPG';
 
 const projects = [
   {
@@ -17,6 +18,16 @@ const projects = [
     img: HerbivoreDelightImg2,
     webLink: 'https://herbivore-delight.netlify.app/',
     githubLink: 'https://github.com/Sir-Apple/vegetarian-recipes',
+  },
+  {
+    id: uuidv4(),
+    name: 'My Manga Space',
+    type: ['Web'],
+    skills: ['ReactJS', 'CSS', 'JavaScript'],
+    desc: 'My Manga Space is a React-based manga browsing platform that fetches and displays up-to-date manga content from the OtruyenAPI which is Vietnamese-subbed for Vietnamese manga readers..',
+    img: MangaSpaceImg,
+    webLink: 'https://manga-space.netlify.app/home',
+    githubLink: 'https://github.com/Sir-Apple/manga-space',
   },
   {
     id: uuidv4(),

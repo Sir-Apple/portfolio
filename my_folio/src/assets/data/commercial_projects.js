@@ -43,9 +43,10 @@ const projects = [
     id: uuidv4(),
     name: 'Battle of Lords: Advance Chess',
     company: 'Advance Studio',
-    type: ['Game'],
-    skills: ['Unity', 'C#'],
+    type: ['Web', 'Game'],
+    skills: ['Vue', 'Unity', 'C#'],
     desc: 'This is a multi-player board game where each chess piece has its own special moves and abilities which is different from the traditional chess game. This game is made with Unity and C#. (Currently in development) ',
+    webLink: 'https://battle-of-lords-advance-chess.netlify.app/',
     img: AdvanceChessImg,
   },
 ];
