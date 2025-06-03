@@ -24,7 +24,7 @@ const projects = [
     name: 'My Manga Space',
     type: ['Web'],
     skills: ['ReactJS', 'CSS', 'JavaScript'],
-    desc: 'My Manga Space is a React-based manga browsing platform that fetches and displays up-to-date manga content from the OtruyenAPI which is Vietnamese-subbed for Vietnamese manga readers..',
+    desc: 'My Manga Space is a React-based manga browsing platform that fetches and displays up-to-date manga content from the OtruyenAPI which is Vietnamese-subbed for Vietnamese manga readers.',
     img: MangaSpaceImg,
     webLink: 'https://manga-space.netlify.app/home',
     githubLink: 'https://github.com/Sir-Apple/manga-space',
