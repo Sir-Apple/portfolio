@@ -83,7 +83,7 @@ const projects = [
     name: 'Endless Runner',
     type: ['Game'],
     skills: ['Unreal Engine', 'C++'],
-    desc: 'Endless Runner is a 3D game made with Unreal Engine. The player will control a character that runs through an endless track and avoiding obstacles.',
+    desc: 'Endless Runner is a 3D mini-game made with Unreal Engine. The player will control a character that runs through an endless track and avoiding obstacles.',
     img: EndlessRunnerImg,
     downloadLink:
       'https://drive.google.com/file/d/1u-WdfJcYPp8rgtJGsyimzMq3XeMkwQ5G/view?usp=sharing',
