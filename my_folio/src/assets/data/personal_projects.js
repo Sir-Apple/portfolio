@@ -12,16 +12,6 @@ import EndlessRunnerImg from '../my_images/ue-endless-runner.png';
 const projects = [
   {
     id: uuidv4(),
-    name: 'Herbivores Delight',
-    type: ['Web'],
-    skills: ['ReactJS', 'Tailwind CSS', 'TypeScript', 'GraphQL', 'NextJS'],
-    desc: 'A vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
-    img: HerbivoreDelightImg2,
-    webLink: 'https://herbivore-delight.netlify.app/',
-    githubLink: 'https://github.com/Sir-Apple/vegetarian-recipes',
-  },
-  {
-    id: uuidv4(),
     name: 'My Manga Space',
     type: ['Web'],
     skills: ['ReactJS', 'CSS', 'JavaScript'],
@@ -29,6 +19,16 @@ const projects = [
     img: MangaSpaceImg,
     webLink: 'https://manga-space.netlify.app/home',
     githubLink: 'https://github.com/Sir-Apple/manga-space',
+  },
+  {
+    id: uuidv4(),
+    name: 'Herbivores Delight',
+    type: ['Web'],
+    skills: ['ReactJS', 'Tailwind CSS', 'TypeScript', 'GraphQL', 'NextJS'],
+    desc: 'A vegetarian recipe website is an online platform dedicated to providing a wide variety of delicious and nutritious plant-based recipes. The website aims to inspire anyone, from beginners to seasoned cooks, to embrace vegetarian cooking and enjoy flavorful, healthy dishes that cater to various dietary preferences.',
+    img: HerbivoreDelightImg2,
+    webLink: 'https://herbivore-delight.netlify.app/',
+    githubLink: 'https://github.com/Sir-Apple/vegetarian-recipes',
   },
   {
     id: uuidv4(),
