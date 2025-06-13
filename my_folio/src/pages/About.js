@@ -93,7 +93,7 @@ export default function About() {
           Bachelor of Information Technology & Games and Interactive
           Environments
         </h2>
-        <h1>Skills</h1>
+        <h1>Tech stack</h1>
         <AboutInfoItem
           title="Languages and Programming Languages"
           items={[
