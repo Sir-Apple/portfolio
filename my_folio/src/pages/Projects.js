@@ -251,7 +251,7 @@ export default function Projects() {
               }}
             >
               {personalProjects.map((project, index) => {
-                if (index >= 7) return null;
+                if (index >= 8) return null;
                 return (
                   <SwiperSlide key={project.id}>
                     <PersonalProjectItem

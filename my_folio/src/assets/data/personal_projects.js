@@ -7,6 +7,7 @@ import TheHaunted from '../my_images/thehauntedbg.jpg';
 import HerbivoreDelightImg from '../my_images/HerDelightApp.PNG';
 import HerbivoreDelightImg2 from '../my_images/HerbivoreDelight.JPG';
 import MangaSpaceImg from '../my_images/manga-space.JPG';
+import EndlessRunnerImg from '../my_images/ue-endless-runner.png';
 
 const projects = [
   {
@@ -76,6 +77,16 @@ const projects = [
     img: BanknoteCollectImg,
     webLink: 'https://world-banknote-collection.netlify.app/',
     githubLink: 'https://github.com/Sir-Apple/banknote-collection',
+  },
+  {
+    id: uuidv4(),
+    name: 'Endless Runner',
+    type: ['Game'],
+    skills: ['Unreal Engine', 'C++'],
+    desc: 'Endless Runner is a 3D game made with Unreal Engine. The player will control a character that runs through an endless track and avoiding obstacles.',
+    img: EndlessRunnerImg,
+    downloadLink:
+      'https://drive.google.com/file/d/1u-WdfJcYPp8rgtJGsyimzMq3XeMkwQ5G/view?usp=sharing',
   },
   {
     id: uuidv4(),
