@@ -7,7 +7,7 @@ const experiences = [
     location: 'Brisbane, Queensland, Australia',
     skills: 'Vue, CSS, Unity, C#',
     desc: [
-      'Currently contributing remotely to a small studio, collaborating with a senior software engineer and international artists and designers (from Vietnam, Japan and Canada) on the mobile and desktop game Battle of Lords: Advance Chess.',
+      'Currently contributing remotely to a small studio, collaborating with a senior software engineer and international artists and designers (from Vietnam, Japan and Canada) on the mobile and desktop game <a href="https://gamejolt.com/games/advance-chess/998256" target="_blank"> Battle of Lords: Advance Chess.</a>',
       'Responsible for implementing complex chess movements and animations using <b> Unity/C# </b> programming techniques.',
       'Working on UI/UX enhancements and game state management logic for a more engaging player experience.',
       'Building a <b> VueJS </b> <a href="https://battle-of-lords-advance-chess.netlify.app/" target="_blank"> landing page </a> with a visually aligned game interface (page is still updating).',
